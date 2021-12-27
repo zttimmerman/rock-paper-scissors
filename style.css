@@ -1,0 +1,87 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+:root {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 1.1rem;
+}
+
+section {
+    flex-grow: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.buttons > button {
+    padding: 1.1rem;
+    margin: 1.3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+#results {
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+#rock {
+    background: url("./img/hand-rock-regular.svg") no-repeat;
+}
+
+#paper {
+    background: url("./img/hand-paper-regular.svg") no-repeat;
+}
+
+#scissors {
+    background: url("./img/hand-scissors-regular.svg") no-repeat;
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1.2rem;
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a > img {
+    width: 1.1rem;
+    position: relative;
+    top: 0.2rem;
+}
